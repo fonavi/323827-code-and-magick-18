@@ -182,33 +182,25 @@
 </template>
 
 <script>
-	var fireballSize = 22;
-	var getFireballSpeed = fireballSpeed(left);
-		function fireballSpeed(left) {
-			 if (left) {
-            return 5;
-		}   return 2;
-        };
-	var wizardSpeed = 3;
-	var wizardWidth = 70;
-	var getWizardHeight = wizardHeight(wizardWidth);
-		function wizardHeright(wiz) {
-		return (wiz) * 1.337;
-		};
+	var fireballSize = 22; // размер фаербола
+	var getFireballSpeed = function(left) {
+	return left ? 5 : 2;
+}; // скорость фаербола
+
+	var wizardSpeed = 3; // скорость волшебника
+	var wizardWidth = 70; // ширина волшебника
+	function getWizardHeight(wizardHeight) {
+		return wizardHeight * 1.337
+};
+
+	
 	function getWizardX(width) {
-		return width / 2;
-	};
+    		return width/2 - wizardWidth/2
+}; // положение по оси Х
+	
 	function getWizardY(height) {
-		return height / 3;
-	};
-
-
-
-
-
-
-
-
+		return height/3
+}; // положение по оси Y
 
 </script>
 
