@@ -1,0 +1,1 @@
+var canvas = document.getElementById('canvas');var ctx = canvas.getContext('2d');window.renderStatistics = function(ctx) {	ctx.fillStyle = '#fff';	ctx.fillRect(100, 10, 420, 270);};
